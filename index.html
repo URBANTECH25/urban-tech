@@ -6,6 +6,133 @@
 <title> URBAN TECH - Tienda Oficial </title>
 <style>
   /* ... tu CSS igual, no lo cambio aquí para no hacer muy largo el mensaje ... */
+
+  /* ✅ Ajustes responsivos adicionales */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .logo-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .site-title {
+    font-size: 1.3rem;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .categories-menu {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  .search-container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    order: 2;
+    border-right: none;
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+  }
+
+  .content {
+    order: 1;
+    padding: 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .product-image {
+    height: 150px;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+
+  .promotions-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+  }
+
+  .cart-container {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.1rem;
+  }
+
+  .cart-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .add-to-cart {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .product-title {
+    font-size: 0.9rem;
+  }
+
+  .current-price {
+    font-size: 1rem;
+  }
+
+  .search-results img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+}
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
